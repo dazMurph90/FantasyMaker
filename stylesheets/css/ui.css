@@ -1,0 +1,43 @@
+#cy {
+	/* width and height defined by js */
+	display: block;
+	border: 3px solid grey;
+	padding-left:0px;
+}
+
+#sidebar{
+	height: 90vh;
+	padding-right: 0px;	
+}
+
+body {
+	font-family: helvetica;
+	font-size: 14px;
+}
+
+.button{
+	background-color: #dddddd;
+}
+
+.activebutton{
+	background-color: green;
+}
+
+.deletebutton{
+	display: none;
+}
+
+.editpane{
+	display: none;
+}
+
+.textarea{
+	width: auto;
+	height: 23vw;
+	display: block;
+}
+
+#editelement{
+	width: 15vw;
+	float:left;
+}
