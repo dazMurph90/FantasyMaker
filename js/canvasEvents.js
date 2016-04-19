@@ -30,7 +30,9 @@ cy.on('tap', function(event)
 			{
 				data: { 
 					id: ++total_pages, 
-					text: "page text"
+					text: "page text",
+					img: "none",
+					audio: "none",
 				},
 				classes: "page",
 				group: "nodes",
@@ -71,11 +73,13 @@ cy.on('select', function(event)
 	}
 	
 	//if adding a new connection
-	createConnection(element);
+	createConnection(event.cyTarget);
 
 	hideEditPanes();
 	updateEditPane(event.cyTarget);
-	$(".deletebutton").show();
+
+	// Selected element functions
+	$(".selectionbutton").show();
 })
 
 /* 	if someone clicks on an element already selected while trying to connect nodes the "select" event doesn't fire, 
